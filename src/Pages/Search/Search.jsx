@@ -22,8 +22,6 @@ const Search = () => {
   const Data = useSelector(getSearchData);
   const [value, setValue] = useState("");
 
-  console.log(Data, "Dataaa");
-
   useEffect(() => {
     dispatch(actionSearch(value));
   }, [value]);
