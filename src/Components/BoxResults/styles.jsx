@@ -6,6 +6,9 @@ export const MainContainer = styled.div`
   border-left: solid 1px black;
   border-bottom: solid 1px black;
   margin-left: 20px;
+  @media only screen and (max-width: 600px) {
+    margin-left: 0px;
+  }
   max-height: 300px;
   overflow-y: scroll;
   overflow-x: hidden;

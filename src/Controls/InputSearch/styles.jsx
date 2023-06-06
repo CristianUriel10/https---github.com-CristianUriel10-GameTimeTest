@@ -4,6 +4,9 @@ import styled from "styled-components";
 export const ContainerInput = styled.div`
   border: solid 1px black;
   padding: 10px;
+  @media only screen and (max-width: 600px) {
+    width: 90%;
+  }
   width: 600px;
   border-radius: 40px;
   display: flex;
