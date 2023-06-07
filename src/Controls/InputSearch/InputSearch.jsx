@@ -15,7 +15,11 @@ const InputSearch = ({ onChange, data, value }) => {
     <>
       <ContainerInput>
         <img src={SearchIcon} alt="search icon" />
-        <Input type="text" onChange={(value) => onChange(value.target.value)} />
+        <Input
+          data-testid="search-input"
+          type="text"
+          onChange={(value) => onChange(value.target.value)}
+        />
       </ContainerInput>
       {value && <BoxResults data={data} />}
     </>
